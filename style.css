@@ -341,18 +341,4 @@ body{
 		overflow-x: hidden;
 	}
   }  
-  @media screen and (min-height: 668px) {
-	body{
-		height: 90vh;
-		width: 35vh;
-		margin:0;
-		font-family: 'Playball';
-		display: grid;
-		background: linear-gradient(rgba(11, 111, 125, 1), rgb(255, 166, 0,0.6)  ),
-				url('https://a.storyblok.com/f/109422/2880x1438/bc65ba59db/main_bg.png') no-repeat center center/cover;
-		overflow: hidden;
-		overflow-y: hidden;
-		overflow-x: hidden;
-		
-	}
-  }  
+ 
