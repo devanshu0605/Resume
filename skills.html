@@ -1,0 +1,696 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Abril+Fatface&family=Dosis:wght@700&family=Edu+NSW+ACT+Foundation:wght@400;700&family=Edu+TAS+Beginner&family=Montserrat&family=Nunito:wght@300&family=Oswald&family=Work+Sans:wght@200&display=swap"
+        rel="stylesheet">
+    <title>Resume </title>
+    <style>
+        /* body{
+    background: hsla(187, 81%, 27%, 1);
+
+    background: linear-gradient(180deg, hsla(187, 81%, 27%, 1) 0%, hsla(164, 94%, 33%, 0.5) 100%);
+    
+    background: -moz-linear-gradient(180deg, hsla(187, 81%, 27%, 1) 0%, hsla(164, 94%, 33%, 0.5) 100%);
+    
+    background: -webkit-linear-gradient(180deg, hsla(187, 81%, 27%, 1) 0%, hsla(164, 94%, 33%, 1) 100%);
+    
+    filter: progid: DXImageTransform.Microsoft.gradient( startColorstr="#0D6E7B", endColorstr="#05A177", GradientType=1 );
+   
+  
+} */
+        body {
+            height: 100vh;
+            width: 100vh;
+            margin: 0;
+            font-family: 'Playball';
+            display: grid;
+            background: linear-gradient(rgba(11, 111, 125, 1), rgb(255, 166, 0, 0.6)),
+                url('https://a.storyblok.com/f/109422/2880x1438/bc65ba59db/main_bg.png') no-repeat center center/cover;
+            overflow: hidden;
+        }
+
+        .container{
+            border-radius: 10px;
+        }
+        .hide {
+            display: none;
+            font-size: 20px;
+        }
+
+        #myDIV:hover+.hide {
+            display: block;
+            color: rgb(170, 255, 175);
+        }
+
+
+
+        .navbar {
+            display: flex;
+
+        }
+
+        .nav1 {
+            padding: 00px 38px;
+            list-style: none;
+            flex-wrap: wrap;
+        }
+
+        .logo {
+            padding: 0px 30px;
+        }
+
+        .nav a {
+            text-decoration-line: none;
+        }
+
+
+        .box-area {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            overflow: hidden;
+        }
+
+        .box-area li {
+            position: absolute;
+            display: block;
+            list-style: none;
+            width: 25px;
+            height: 25px;
+            background: rgba(255, 255, 255, 0.6);
+            animation: animate 20s linear infinite;
+            bottom: -150px;
+        }
+
+        .box-area li:nth-child(1) {
+            left: 86%;
+            width: 80px;
+            height: 80px;
+            animation-delay: 0s;
+        }
+
+        .box-area li:nth-child(2) {
+            left: 12%;
+            width: 30px;
+            height: 30px;
+            animation-delay: 1.5s;
+            animation-duration: 10s;
+        }
+
+        .box-area li:nth-child(3) {
+            left: 70%;
+            width: 100px;
+            height: 100px;
+            animation-delay: 5.5s;
+        }
+
+        .box-area li:nth-child(4) {
+            left: 42%;
+            width: 150px;
+            height: 150px;
+            animation-delay: 0s;
+            animation-duration: 15s;
+        }
+
+        .box-area li:nth-child(5) {
+            left: 65%;
+            width: 40px;
+            height: 40px;
+            animation-delay: 0s;
+        }
+
+        .box-area li:nth-child(6) {
+            left: 15%;
+            width: 110px;
+            height: 110px;
+            animation-delay: 3.5s;
+        }
+
+        @keyframes animate {
+            0% {
+                transform: translateY(0) rotate(0deg);
+                opacity: 1;
+            }
+
+            100% {
+                transform: translateY(-800px) rotate(360deg);
+                opacity: 0;
+            }
+        }
+
+        .center {
+            position: absolute;
+            left: 50%;
+            top: 50%;
+            height: 70%;
+            width: 70%;
+            transform: translate(-50%, -50%);
+            background-color: #444445;
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        #inside {
+            position: absolute;
+            color: white;
+            left: 65%;
+            top: 50%;
+            height: 96%;
+            width: 70%;
+            transform: translate(-50%, -50%);
+            background-color: #222;
+            border-radius: 25px;
+            padding: 10px;
+        }
+
+        #dp {
+            border-radius: 50%;
+            margin-top: 40px;
+        }
+
+        #intro {
+            float: left;
+            width: 28%;
+            height: 100%;
+            color: white;
+        }
+
+        #dev {
+            text-decoration: none;
+            color: #ccccd0;
+            font-size: 20px;
+            font-family: 'Abril Fatface', cursive;
+
+            font-family: 'Dosis', sans-serif;
+
+            font-family: 'Edu NSW ACT Foundation', cursive;
+
+            font-family: 'Edu TAS Beginner', cursive;
+
+            font-family: 'Montserrat', sans-serif;
+
+            font-family: 'Nunito', sans-serif;
+
+            font-family: 'Oswald', sans-serif;
+
+            font-family: 'Work Sans', sans-serif;
+        }
+
+        #dev:hover {
+            color: rgb(159, 252, 179);
+
+        }
+
+        .social {
+            padding: 06px 06px 06px 06px;
+            color: white;
+            font-size: 20px;
+            text-decoration: none;
+        }
+
+        .social:hover {
+            color: rgb(0, 0, 0);
+            background-color: aliceblue;
+            border-radius: 60%;
+        }
+
+        #socials {
+            margin-top: 28px;
+        }
+
+        #download {
+            border: white 2px solid;
+            width: 60%;
+            height: 20%;
+            margin-top: 40px;
+        }
+
+        #down {
+            text-decoration: none;
+            color: white;
+        }
+
+        #download:hover {
+            border: white 2px solid;
+            background-color: white;
+            color: rgb(17, 162, 48);
+        }
+
+        #copy {
+
+            font-size: 10px;
+        }
+
+        #name2 {
+            font-size: 100px;
+            margin-top: 8vh;
+        }
+
+        @media only screen and (max-height: 750px) {
+
+            #dp {
+                border-radius: 50%;
+                margin-top: 20px;
+            }
+        }
+
+        @media only screen and (max-height: 710px) {
+
+            #dp {
+                border-radius: 50%;
+                margin-top: 5px;
+            }
+
+            #download {
+                border: white 2px solid;
+                width: 60%;
+                height: 20%;
+                margin-top: 5px;
+            }
+        }
+
+        @media only screen and (max-height: 650px) {
+
+            #dp {
+                border-radius: 50%;
+                margin-top: 2px;
+            }
+
+            #download {
+                border: white 2px solid;
+                width: 60%;
+                height: 20%;
+                margin-top: 2px;
+            }
+        }
+
+        @media only screen and (max-height: 618px) {
+
+            #dp {
+                border-radius: 50%;
+                margin-top: 20px;
+                height: 120px;
+                width: 120px;
+            }
+
+            #download {
+                border: white 2px solid;
+                width: 60%;
+                height: 20%;
+                margin-top: 2px;
+            }
+
+            #name2 {
+                font-size: 100px;
+                margin-top: 9vh;
+            }
+        }
+
+        @media only screen and (max-height: 562px) {
+
+            #dp {
+                border-radius: 50%;
+                margin-top: 16px;
+                height: 100px;
+                width: 100px;
+            }
+
+            #download {
+                border: white 2px solid;
+                width: 60%;
+                height: 20%;
+                margin-top: 2px;
+            }
+
+            #name2 {
+                font-size: 90px;
+                margin-top: 7vh;
+            }
+        }
+
+        @media screen and (max-width: 1230px) {
+            #devanshu {
+                font-size: 30px;
+            }
+
+            .nav1 {
+                padding: 00px 25px;
+                list-style: none;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 1421px) {
+            .nav1 {
+                padding: 00px 34px;
+                list-style: none;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 1421px) {
+            .nav1 {
+                padding: 00px 30px;
+                list-style: none;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 1180px) {
+            #name2 {
+                font-size: 80px;
+                margin-top: 12vh;
+            }
+
+            .nav1 {
+                padding: 00px 25px;
+                list-style: none;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 1116px) {
+            #name2 {
+                font-size: 80px;
+                margin-top: 12vh;
+            }
+
+            .nav1 {
+                padding: 00px 23px;
+                list-style: none;
+                flex-wrap: wrap;
+            }
+        }
+
+        @media screen and (max-width: 1060px) {
+            #inside {
+                display: none;
+            }
+
+            #intro {
+                float: left;
+                width: 100%;
+                height: 100%;
+                color: white;
+            }
+        }
+
+        @media screen and (max-width: 294px) {
+            #inside {
+                display: none;
+            }
+
+            #intro {
+                float: left;
+                width: 100%;
+                height: 100%;
+                color: white;
+            }
+
+            #dp {
+                width: 170px;
+                height: 170px;
+            }
+        }
+
+        @media screen and (max-width: 240px) {
+            #inside {
+                display: none;
+            }
+
+            #intro {
+                float: left;
+                width: 100%;
+                height: 100%;
+                color: white;
+            }
+
+            #dp {
+                width: 140px;
+                height: 140px;
+            }
+        }
+
+        @media screen and (max-width: 500px) {
+            body {
+                height: 100vh;
+                width: 40vh;
+                margin: 0;
+                font-family: 'Playball';
+                display: grid;
+                background: linear-gradient(rgba(11, 111, 125, 1), rgb(255, 166, 0, 0.6)),
+                    url('https://a.storyblok.com/f/109422/2880x1438/bc65ba59db/main_bg.png') no-repeat center center/cover;
+                overflow: hidden;
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+        }
+
+        @media screen and (max-width: 850px) {
+            body {
+                height: 100vh;
+                width: 35vh;
+                margin: 0;
+                font-family: 'Playball';
+                display: grid;
+                background: linear-gradient(rgba(11, 111, 125, 1), rgb(255, 166, 0, 0.6)),
+                    url('https://a.storyblok.com/f/109422/2880x1438/bc65ba59db/main_bg.png') no-repeat center center/cover;
+                overflow: hidden;
+                overflow-y: hidden;
+                overflow-x: hidden;
+            }
+        }
+
+        #nav {
+            width: 50px;
+            height: 230px;
+            margin-left: 120px;
+            border-radius: 20px;
+            background-color: #000000;
+        }
+
+        .icons {
+            color: white;
+            margin-left: 5%;
+            margin-right: 5%;
+            font-size: 30px;
+        }
+
+        #about {
+            /* color: #0ba376; */
+            font-size: 35px;
+        }
+
+        .p {
+            color: #0ba376;
+        }
+
+        #introduction {
+            padding-left: 30px;
+        }
+
+        .container {
+            width: 100%;
+            background-color: #ddd;
+        }
+
+        .skills {
+            text-align: right;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            color: white;
+        }
+
+        .html {
+            width: 95%;
+            background-color: #04AA6D;
+        }
+
+        .ajs {
+            width: 80%;
+            background-color: #2196F3;
+        }
+
+        .java {
+            width: 40%;
+            background-color: #f44336;
+        }
+
+        .backend {
+            width: 10%;
+            background-color: #c29191;
+        }
+        .arvr {
+            width: 20%;
+            background-color: #d4eaa0;
+            color: #000000;
+        }
+        .python{
+            width: 50%;
+            background-color: #808080;
+        }
+        .c {
+            width: 60%;
+            background-color: #000e42;
+        }
+        .flutter {
+            width: 30%;
+            background-color: #849726;
+        }
+        #skills1{
+            float: left;
+            width: 48%;
+            
+        }
+        #skills2{
+            float: right;
+            width: 45%;
+
+        }
+    </style>
+</head>
+
+<body>
+
+    <div class="animation-area">
+        <ul class="box-area">
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+            <li></li>
+        </ul>
+    </div>
+
+
+
+    <div class="center">
+        <div id="intro">
+
+            <center> <img src="Images/profile-pic(3).png" alt="Avatar" srcset="" id="dp" width="200px" height="200px">
+            </center>
+            <center>
+                <h1 id="devanshu"> Devanshu Saxena </h1>
+                <p> <a href="https://github.com/devanshu0605" target="_blank" id="dev"> Developer
+                        <i class="fa-brands fa-github"></i> </a> </p>
+                <p id="socials"> <a href="https://www.linkedin.com/in/devanshu-saxena01/" target="_blank"
+                        class="social"><i class="fa-brands fa-linkedin-in"></i> </a>
+                    <a href="https://www.instagram.com/devanshu0_1/" target="_blank" class="social"><i
+                            class="fa-brands fa-instagram"></i></a>
+                    <a href="https://twitter.com/DEVANSHU0_1" target="_blank" class="social"><i
+                            class="fa-brands fa-twitter"></i></a>
+                </p>
+
+                <a href="Devanshu'sResume 2.pdf" download="Devanshu_Resume" id="down">
+                    <div id="download">
+                        <p> <i class="fa-solid fa-download"></i> Download CV </p>
+                    </div>
+                </a>
+                <p id="copy"><i class="fa-regular fa-copyright"></i> 2022 All rights reserved. </p>
+            </center>
+        </div>
+        <div id="inside">
+            <div>
+                <br>
+                <center>
+                    <ul class="navbar">
+                        <li class="nav1"> <a href="index.html" class="icons"> <i class="fa-solid fa-house"
+                                    id="myDIV"></i>
+                                <!-- <div class="hide">Home</div>        -->
+                            </a> </li>
+
+
+                        <li class="nav1" > <a href="info.html" class="icons"> <i
+                                    class="fa-solid fa-user"></i> </a> </li>
+                        <li class="nav1"b> <a href="qulif.html" class="icons"> <i
+                                    class="fa-solid fa-graduation-cap"></i> </a> </li>
+                        <li class="nav1"> <a href="work.html" class="icons"> <i class="fa-solid fa-briefcase"></i>
+                            </a> </li>
+                        <li class="nav1"> <a href="skills.html" class="icons"> <i class="fa-solid fa-book"></i> </a>
+                        </li>
+                        <li class="nav1"> <a href="http://" class="icons"> <i class="fa-solid fa-envelope"></i> </a>
+                        </li>
+                    </ul>
+                </center>
+            </div>
+            <div>
+                <div>
+                    <center>
+                        <h1 id="about"> Skills </h1>
+                    </center>
+                    <div id="introduction">
+                        <div id="skills1">
+                            <p>HTML & CSS</p>
+                            <div class="container">
+                                <div class="skills html">95%</div>
+                            </div>
+
+                            <p>Angular (Javascript Library)</p>
+                            <div class="container">
+                                <div class="skills ajs">80%</div>
+                            </div>
+
+                            <p>AR/VR</p>
+                            <div class="container">
+                                <div class="skills arvr">20%</div>
+                            </div>
+
+                            <p>Python</p>
+                            <div class="container">
+                                <div class="skills python">50%</div>
+                            </div>
+                        </div>
+                        <div id="skills2">
+                            <p>Java</p>
+                            <div class="container">
+                                <div class="skills java">40%</div>
+                            </div>
+
+                            <p>C</p>
+                            <div class="container">
+                                <div class="skills c">60%</div>
+                            </div>
+
+                            <p>Backend</p>
+                            <div class="container">
+                                <div class="skills backend">10%</div>
+                            </div>
+
+                            <p>Flutter</p>
+                            <div class="container">
+                                <div class="skills flutter">30%</div>
+                            </div>
+                        </div>
+
+
+
+                    </div>
+
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.2/css/all.min.css"
+        integrity="sha512-1sCRPdkRXhBV2PBLUdRb4tMg1w2YPf37qatUFeS7zlBy7jJI8Lf4VHwWfZZfpXtYSLy85pkm9GaYVYMfw5BC1A=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
+</body>
+
+</html>
