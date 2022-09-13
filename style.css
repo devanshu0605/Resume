@@ -22,6 +22,38 @@ body{
     overflow: hidden;
 }
 
+.hide {
+	display: none;
+	font-size: 20px;
+  }
+	  
+#myDIV:hover + .hide {
+	display: block;
+	color: rgb(170, 255, 175);
+  }
+
+
+
+.navbar {
+	display: flex;
+
+}
+
+.nav1{
+	padding: 00px 38px;
+	list-style: none;
+	flex-wrap: wrap;
+}
+
+.logo {
+	padding: 0px 30px;
+}
+
+.nav a {
+	text-decoration-line: none;
+}
+
+
 .box-area {
 	position: absolute;
 	top: 0;
@@ -181,7 +213,7 @@ body{
   } 
   #name2{
 	font-size: 100px;
-	margin-top: 16vh;
+	margin-top: 8vh;
 }
 @media only screen and (max-height: 750px) {
 	
@@ -232,7 +264,7 @@ body{
 	}
 	#name2{
 		font-size: 100px;
-		margin-top: 10vh;
+		margin-top: 9vh;
 	}
   }
 @media only screen and (max-height: 562px) {
@@ -251,24 +283,54 @@ body{
 	}
 	#name2{
 		font-size: 90px;
-		margin-top: 8vh;
+		margin-top: 7vh;
 	}
   }
 @media screen and (max-width: 1230px) {
 	#devanshu{
 		font-size: 30px;
 	}
+	.nav1{
+		padding: 00px 25px;
+		list-style: none;
+		flex-wrap: wrap;
+	}
+  }  
+@media screen and (max-width: 1421px) {
+	.nav1{
+		padding: 00px 34px;
+		list-style: none;
+		flex-wrap: wrap;
+	}
+  }  
+ 
+@media screen and (max-width: 1421px) {
+	.nav1{
+		padding: 00px 30px;
+		list-style: none;
+		flex-wrap: wrap;
+	}
   }  
 @media screen and (max-width: 1180px) {
 	#name2{
 		font-size: 80px;
-		margin-top: 20vh;
+		margin-top: 12vh;
+	}
+	.nav1{
+		padding: 00px 25px;
+		list-style: none;
+		flex-wrap: wrap;
 	}
   }  
 @media screen and (max-width: 1116px) {
 	#name2{
-		font-size: 60px;
-		margin-top: 30vh;
+		font-size: 80px;
+		margin-top: 12vh;
+	}
+	.nav1{
+		padding: 00px 23px;
+		list-style: none;
+		flex-wrap: wrap;
 	}
   }  
 @media screen and (max-width: 1060px) {
@@ -340,5 +402,20 @@ body{
 		overflow-y: hidden;
 		overflow-x: hidden;
 	}
-  }  
+  } 
+  
+  #nav{
+	width: 50px;
+	height: 230px;
+	margin-left: 120px;
+	border-radius: 20px;
+	background-color:#000000;
+  }
+  .icons{
+	color: white;
+	margin-left: 5%;
+	margin-right: 5%;
+	font-size: 30px;
+  }
+
  
