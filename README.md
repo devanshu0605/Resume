@@ -2,10 +2,10 @@
 
 <h1 align="center">Resume Website</h1>
 
+<h2 align="center">An overview of the website</h2>
 
 
 
-# An overview of the website
 
 <p align="center"> 
 
